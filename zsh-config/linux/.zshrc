@@ -16,6 +16,7 @@ export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 export XDG_DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$HOME/.cache}"
 
+
 # Path configuration
 HOMEBREW_PREFIX="/opt/homebrew"
 BUN_INSTALL="$HOME/.bun"
@@ -214,7 +215,7 @@ quarter_remaining() {
     local ITALIC_RED='\e[1;3;91m'
     local RESET='\e[0m'
 
-    printf "\n${ITALIC_CYAN}\t\"Get up anon, work so fast that you become the best.\"\n"
+    printf "${ITALIC_CYAN}\t\"Get up anon, work so fast that you become the best.\"\n"
     printf "${ITALIC_YELLOW}\t— Avi\n${RESET}\n"
     printf "${ITALIC_CYAN}\tToday: %s${RESET}\n\n" "$PRETTY_TODAY"
     printf "${ITALIC_RED}\t%d days --> '%s'${RESET}\n" "$DAYS_REMAINING" "$PRETTY_END"
@@ -287,6 +288,9 @@ if command_exists fzf; then
         export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
     fi
 fi
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Zoxide smart directory jumper (check if installed)
 if command_exists zoxide; then
@@ -465,3 +469,5 @@ setopt INTERACTIVE_COMMENTS # Allow comments in interactive shell
 
 # Disable beep
 unsetopt BEEP
+
+
