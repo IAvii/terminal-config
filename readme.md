@@ -1,6 +1,6 @@
 # Config Files Setup Guide
 
-A collection of shell configuration files for a modern, productive terminal experience. This repository contains [Zsh](https://www.zsh.org/) configuration with [Zinit](https://github.com/zdharma-continuum/zinit) plugin manager and [Fastfetch](https://github.com/fastfetch-cli/fastfetch) system information display. Created by og [GeneCodeSavvy](https://github.com/GeneCodeSavvy) & enhanced by [Ramxcodes](https://github.com/ramxcodes).
+A collection of shell configuration files for a modern, productive terminal experience.
 
 ## Preview
 ![Terminal Preview](/terminal.png)
